@@ -727,11 +727,39 @@
           </li>
         </ul>
       </div>
+      <div>
+        <p>Подпишитесь на рассылку</p>
+        <label for="email">E-mail</label>
+        <input type="email" name="email" id="email">
+        <button type="submit">Подписаться</button>
+      </div>
     </div>
   </footer>
 
   <div class="backdrop is-hidden" data-modal>
     <div class="modal">
+      <form>
+        <div>
+          <label for="name">Имя</label>
+          <input type="text" name="name" id="name">
+        </div>
+        <div>
+          <label for="tel">Телефон</label>
+          <input type="tel" name="tel" id="tel">
+        </div>
+        <div>
+          <label for="email">Почта</label>
+          <input type="email" name="email" id="email">
+        </div>
+
+        <label for="comment">Комментарий</label>
+        <textarea name="comment" id="comment" cols="30" rows="10" placeholder="Введите текст"></textarea>
+
+        <input type="checkbox" name="contract" value="contract" id="contract">
+        <label for="contract">Соглашаюсь с рассылкой и принимаю <a href="">Условия договора</a> </label>
+
+        <button type="submit">Отправить</button>
+      </form>
       <button type="button" class="modal-close-btn" data-modal-close><svg class="icon-close-black-18dp-2-1">
           <use xlink:href="#icon-close-black-18dp-2-1"></use>
         </svg></button>

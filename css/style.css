@@ -32,7 +32,9 @@ img {
 button:focus {
   outline: none;
 }
-
+textarea {
+  resize: none;
+}
 .list {
   list-style: none;
 }
