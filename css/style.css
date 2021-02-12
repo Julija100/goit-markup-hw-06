@@ -239,7 +239,7 @@ textarea {
   border: none;
   letter-spacing: 0.06em;
   color: #ffffff;
-  transition: backround-color 2500ms cubic-bezier(0.4, 0, 0.2, 1);
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .button-primary :focus,
@@ -699,6 +699,7 @@ textarea {
   border-radius: 4px;
   background: none;
   color: rgba(255, 255, 255, 0.6);
+  padding-left: 16px;
 }
 
 .subscribe-input::placeholder {
@@ -708,27 +709,23 @@ textarea {
 .subscribe-btn {
   width: 200px;
   height: 50px;
-  background: #2196f3;
+  color: var(--primary-btn-text-color);
+  background-color: var(--accent-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
-  position: absolute;
-
-  font-weight: bold;
-  font-size: 16px;
-  line-height: 1.875;
-  align-items: center;
-  text-align: justify;
+  padding: 10px 29px;
+  border: none;
   letter-spacing: 0.06em;
   color: #ffffff;
-  padding-left: 29px;
+  transition: backround-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
+  text-align: justify;
 }
 .subscribe-icon {
   position: absolute;
   width: 24px;
   height: 24px;
   top: 55%;
-  right: 20px;
+  right: 28px;
 }
 /*=====FOOTER END=====*/
 
@@ -760,9 +757,9 @@ textarea {
   flex-direction: column;
   margin-bottom: 10px;
 }
-.form-field label {
+/* .form-field label {
   margin-bottom: 4px;
-}
+} */
 
 .comment {
   padding: 12px;
@@ -770,6 +767,10 @@ textarea {
   height: 120px;
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
+  font-size: 14px;
+  line-height: 1.143;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
 }
 .modal-icon {
   position: absolute;
@@ -785,11 +786,41 @@ textarea {
   border: 1px solid rgba(33, 33, 33, 0.2);
   border-radius: 4px;
   padding-left: 30px;
+  transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 .form-input:focus ~ .modal-icon {
   fill: #2196f3;
 }
-
+.form-input:focus,
+.form-input:active {
+  border: 1px solid #2196f3;
+}
+.form-label {
+  width: 25px;
+  height: 14px;
+  font-size: 12px;
+  line-height: 1.167;
+  letter-spacing: 0.01em;
+  color: #757575;
+}
+.terms {
+  width: 400px;
+  height: 24px;
+  font-size: 14px;
+  line-height: 1.714;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+.modal-icon-check {
+  width: 16px;
+  height: 15px;
+}
+.comment-container {
+  width: 423px;
+  height: 24px;
+  text-align: center;
+  margin-bottom: 30px;
+}
 /*=====MODAL END=====*/
 .backdrop {
   position: fixed;
