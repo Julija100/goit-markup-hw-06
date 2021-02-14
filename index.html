@@ -776,7 +776,7 @@
     </div>
   </footer>
 
-  <div class="backdrop " data-modal>
+  <div class="backdrop is-hidden" data-modal>
     <div class="modal">
 
 
@@ -818,13 +818,20 @@
 
         <div class="comment-container">
 
-          <!-- <input type="checkbox" name="contract" value="contract" id="contract"> -->
+          <input type="checkbox" name="contract" value="contract" id="contract">
 
-          <svg class="modal-icon-check">
-            <use xlink:href="#icon-icon-check">
-            </use>
-          </svg>
-          <label class="terms" for="contract">Соглашаюсь с рассылкой и принимаю<a href="#">Условия договора</a>
+
+          <label class="terms" for="contract">
+
+            <svg class="modal-icon-check">
+              <use xlink:href="#icon-Vector">
+              </use>
+            </svg>
+            <svg class="modal-icon-check">
+              <use xlink:href="#icon-icon-check">
+              </use>
+            </svg>
+            <span>Соглашаюсь с рассылкой и принимаю <a href="#">Условия договора</a></span>
           </label>
         </div>
 
